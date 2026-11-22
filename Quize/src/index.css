@@ -1,0 +1,130 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  min-height: 100vh;
+}
+
+.quiz-container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.quiz-card {
+  background: white;
+  width: 100%;
+  max-width: 650px;
+  padding: 35px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.quiz-card h1 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 25px;
+}
+
+.quiz-card h2 {
+  color: #333;
+  margin: 25px 0;
+  line-height: 1.5;
+}
+
+.quiz-info {
+  display: flex;
+  justify-content: space-between;
+  color: #666;
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+
+.progress {
+  width: 100%;
+  height: 8px;
+  background: #eee;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.progress-bar {
+  height: 100%;
+  background: #667eea;
+  transition: width 0.3s ease;
+}
+
+.answers {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.answer-button {
+  width: 100%;
+  padding: 15px;
+  border: 2px solid #ddd;
+  border-radius: 10px;
+  background: white;
+  font-size: 16px;
+  text-align: left;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.answer-button:hover {
+  border-color: #667eea;
+  background: #f5f6ff;
+}
+
+.answer-button.correct {
+  background: #d4edda;
+  border-color: #28a745;
+  color: #155724;
+}
+
+.answer-button.wrong {
+  background: #f8d7da;
+  border-color: #dc3545;
+  color: #721c24;
+}
+
+.next-button,
+.quiz-card > button {
+  width: 100%;
+  margin-top: 20px;
+  padding: 15px;
+  border: none;
+  border-radius: 10px;
+  background: #667eea;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.next-button:hover,
+.quiz-card > button:hover {
+  background: #5568d8;
+}
+
+.result-card {
+  text-align: center;
+}
+
+.result-card h2 {
+  color: #667eea;
+}
+
+.result-card p {
+  color: #666;
+  font-size: 18px;
+  margin: 20px 0;
+}

@@ -1,0 +1,45 @@
+.user-data {
+  width: 90%;
+  max-width: 700px;
+  margin: 30px auto;
+  padding: 25px;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+  color: #222;
+}
+
+.user-data h1 {
+  text-align: center;
+  color: #2563eb;
+  margin-bottom: 25px;
+}
+
+.user-data .user {
+  padding: 18px;
+  margin-bottom: 15px;
+  background: #f5f7fb;
+  border-left: 5px solid #2563eb;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+.user-data .user:hover {
+  background: #eaf1ff;
+  transform: translateX(5px);
+}
+
+.user-data h3 {
+  margin: 0 0 10px;
+  color: #1d4ed8;
+}
+
+.user-data p {
+  margin: 6px 0;
+  font-size: 16px;
+  color: #444;
+}
+
+.user-data hr {
+  display: none;
+}
